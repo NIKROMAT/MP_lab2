@@ -3,13 +3,10 @@ CXX = g++
 PY = python3
 OBJ = main.o lab2.o
 
-# GRAPH = graphics.png
-
 OTHER = ${TARGET} graphics.png results.csv target_key.txt datasets latex html
 
-# SRCS = lab2.cpp main.cpp
 
-.PHONY : clean cleanall all graph doc
+.PHONY : clean cleanall all graph doc generate
 
 all : ${TARGET} target_key.txt datasets 
 
@@ -34,6 +31,9 @@ results.csv : ${TARGET} | target_key.txt datasets
 
 target_key.txt datasets &: | datamaker.py
 	${PY} datamaker.py
+
+
+generate: target_key.txt datasets
 
 
 doc: Doxyfile
