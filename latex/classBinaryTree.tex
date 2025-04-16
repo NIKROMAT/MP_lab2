@@ -1,0 +1,89 @@
+\hypertarget{classBinaryTree}{}\section{Класс Binary\+Tree}
+\label{classBinaryTree}\index{Binary\+Tree@{Binary\+Tree}}
+
+
+Класс бинарного дерева  
+
+
+
+
+{\ttfamily \#include $<$lab2.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBinaryTree_adf45bce605436b26c353b87e27bffe50}\label{classBinaryTree_adf45bce605436b26c353b87e27bffe50}} 
+\mbox{\hyperlink{classBinaryTree_adf45bce605436b26c353b87e27bffe50}{Binary\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор бинарного дерева по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}{Binary\+Tree}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Конструктор бинарного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}\label{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}} 
+\mbox{\hyperlink{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}{$\sim$\+Binary\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор бинарного дерева \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}{insert}} (const \mbox{\hyperlink{structObject}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}{search}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Метод для поиска всех объектов в бинарном дереве с заданным ключом \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс бинарного дерева 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}\label{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}} 
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{Binary\+Tree()}{BinaryTree()}}
+{\footnotesize\ttfamily Binary\+Tree\+::\+Binary\+Tree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List }\end{DoxyParamCaption})}
+
+
+
+Конструктор бинарного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em item\+List} & Список объектов класса \mbox{\hyperlink{structObject}{Object}}, которые помещаются в дерево при создании \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}\label{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}} 
+\index{Binary\+Tree@{Binary\+Tree}!insert@{insert}}
+\index{insert@{insert}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, помещаемый в бинарное дерево \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}\label{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}} 
+\index{Binary\+Tree@{Binary\+Tree}!search@{search}}
+\index{search@{search}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ Binary\+Tree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Метод для поиска всех объектов в бинарном дереве с заданным ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ, по которому ищутся объекты класса \mbox{\hyperlink{structObject}{Object}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab2_8h}{lab2.\+h}}\item 
+\mbox{\hyperlink{lab2_8cpp}{lab2.\+cpp}}\end{DoxyCompactItemize}

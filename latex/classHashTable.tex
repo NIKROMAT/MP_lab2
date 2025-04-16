@@ -1,0 +1,134 @@
+\hypertarget{classHashTable}{}\section{Класс Hash\+Table}
+\label{classHashTable}\index{Hash\+Table@{Hash\+Table}}
+
+
+Класс хеш-\/таблицы  
+
+
+
+
+{\ttfamily \#include $<$lab2.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHashTable_adc3bf2b214c572819ba957ad314d7db3}\label{classHashTable_adc3bf2b214c572819ba957ad314d7db3}} 
+\mbox{\hyperlink{classHashTable_adc3bf2b214c572819ba957ad314d7db3}{Hash\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор хеш-\/таблицы по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHashTable_a76dc30591ccc0f44104f9d42cb342271}{Hash\+Table}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Конструктор хеш-\/таблицы по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}\label{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}} 
+\mbox{\hyperlink{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}{$\sim$\+Hash\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор хеш-\/таблицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHashTable_a59ca87e22b811a05fa83b7dd9d8b94a1}{insert}} (const \mbox{\hyperlink{structObject}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classHashTable_a9629c6b3cc56102e36d25eb0f10df79f}{search}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Метод для поиска всех объектов в хеш-\/таблице с заданным ключом \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classHashTable_a71b8dca2be787ae6f7b0c2f566d5d708}{get\+Collisions}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения количества возникших коллизий \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classHashTable_af2ad1fc31a7f84454cf695a10cae470f}{get\+Fullness}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения заполненности хеш-\/таблицы \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classHashTable_a9ccba61a7e386b3843c1a621445d5e92}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения размера хеш-\/таблицы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс хеш-\/таблицы 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{classHashTable_a76dc30591ccc0f44104f9d42cb342271}\label{classHashTable_a76dc30591ccc0f44104f9d42cb342271}} 
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{Hash\+Table()}{HashTable()}}
+{\footnotesize\ttfamily Hash\+Table\+::\+Hash\+Table (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List }\end{DoxyParamCaption})}
+
+
+
+Конструктор хеш-\/таблицы по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em item\+List} & Список объектов класса \mbox{\hyperlink{structObject}{Object}}, которые помещаются в таблицу при создании \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{classHashTable_a9ccba61a7e386b3843c1a621445d5e92}\label{classHashTable_a9ccba61a7e386b3843c1a621445d5e92}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Capacity@{get\+Capacity}}
+\index{get\+Capacity@{get\+Capacity}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Capacity()}{getCapacity()}}
+{\footnotesize\ttfamily size\+\_\+t Hash\+Table\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения размера хеш-\/таблицы 
+
+\begin{DoxyReturn}{Возвращает}
+Размер хеш-\/таблицы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHashTable_a71b8dca2be787ae6f7b0c2f566d5d708}\label{classHashTable_a71b8dca2be787ae6f7b0c2f566d5d708}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Collisions@{get\+Collisions}}
+\index{get\+Collisions@{get\+Collisions}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Collisions()}{getCollisions()}}
+{\footnotesize\ttfamily size\+\_\+t Hash\+Table\+::get\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения количества возникших коллизий 
+
+\begin{DoxyReturn}{Возвращает}
+Количество возникших коллизий 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHashTable_af2ad1fc31a7f84454cf695a10cae470f}\label{classHashTable_af2ad1fc31a7f84454cf695a10cae470f}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Fullness@{get\+Fullness}}
+\index{get\+Fullness@{get\+Fullness}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Fullness()}{getFullness()}}
+{\footnotesize\ttfamily size\+\_\+t Hash\+Table\+::get\+Fullness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения заполненности хеш-\/таблицы 
+
+\begin{DoxyReturn}{Возвращает}
+Заполненность хеш-\/таблицы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHashTable_a59ca87e22b811a05fa83b7dd9d8b94a1}\label{classHashTable_a59ca87e22b811a05fa83b7dd9d8b94a1}} 
+\index{Hash\+Table@{Hash\+Table}!insert@{insert}}
+\index{insert@{insert}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Hash\+Table\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, помещаемый в хеш-\/таблицу \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHashTable_a9629c6b3cc56102e36d25eb0f10df79f}\label{classHashTable_a9629c6b3cc56102e36d25eb0f10df79f}} 
+\index{Hash\+Table@{Hash\+Table}!search@{search}}
+\index{search@{search}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ Hash\+Table\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Метод для поиска всех объектов в хеш-\/таблице с заданным ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ, по которому ищутся объекты класса \mbox{\hyperlink{structObject}{Object}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab2_8h}{lab2.\+h}}\item 
+\mbox{\hyperlink{lab2_8cpp}{lab2.\+cpp}}\end{DoxyCompactItemize}

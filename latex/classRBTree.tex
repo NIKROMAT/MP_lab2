@@ -1,0 +1,93 @@
+\hypertarget{classRBTree}{}\section{Класс R\+B\+Tree}
+\label{classRBTree}\index{R\+B\+Tree@{R\+B\+Tree}}
+
+
+Класс красно-\/чёрного дерева  
+
+
+
+
+{\ttfamily \#include $<$lab2.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}} 
+\mbox{\hyperlink{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}{R\+B\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор красно-\/чёрного дерева по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRBTree_afdab010948bf322d42bd33127b5a1b58}{R\+B\+Tree}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Констуктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}\label{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}} 
+\mbox{\hyperlink{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}{$\sim$\+R\+B\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор красно-\/чёрного дерева \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}{insert}} (const \mbox{\hyperlink{structObject}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classRBTree_a1afdf2af49051499c00452aa01107255}{search}} (const std\+::string \&, Node $\ast$=nullptr) const
+\begin{DoxyCompactList}\small\item\em Метод для поиска всех объектов в красно-\/чёрном дереве с заданным ключом \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс красно-\/чёрного дерева 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{classRBTree_afdab010948bf322d42bd33127b5a1b58}\label{classRBTree_afdab010948bf322d42bd33127b5a1b58}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{R\+B\+Tree()}{RBTree()}}
+{\footnotesize\ttfamily R\+B\+Tree\+::\+R\+B\+Tree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List }\end{DoxyParamCaption})}
+
+
+
+Констуктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. 
+
+Конструктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em item\+List} & Список объектов класса \mbox{\hyperlink{structObject}{Object}}, которые помещаются в дерево при создании \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}\label{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!insert@{insert}}
+\index{insert@{insert}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, помещаемый в красно-\/чёрное дерево \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRBTree_a1afdf2af49051499c00452aa01107255}\label{classRBTree_a1afdf2af49051499c00452aa01107255}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!search@{search}}
+\index{search@{search}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ R\+B\+Tree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{Node $\ast$}]{node = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+
+
+Метод для поиска всех объектов в красно-\/чёрном дереве с заданным ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ, по которому ищутся объекты класса \mbox{\hyperlink{structObject}{Object}} \\
+\hline
+{\em node} & Указатель на узел, начиная с которого происходит поиск \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab2_8h}{lab2.\+h}}\item 
+\mbox{\hyperlink{lab2_8cpp}{lab2.\+cpp}}\end{DoxyCompactItemize}
