@@ -1,17 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 2: Класс RBTree</title>
+<title>Лабораторная работа 2: Класс RBTree</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,9 +24,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 2
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 2
    </div>
   </td>
  </tr>
@@ -29,22 +34,33 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.13.2 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -54,52 +70,96 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 </div><!-- top -->
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classRBTree-members.html">Полный список членов класса</a>  </div>
-  <div class="headertitle">
-<div class="title">Класс RBTree</div>  </div>
+  <div class="headertitle"><div class="title">Класс RBTree</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс красно-чёрного дерева  
- <a href="classRBTree.html#details">Подробнее...</a></p>
+ <a href="#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="lab2_8h_source.html">lab2.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRBTree_1_1Node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс узла красно-чёрного дерева  <a href="structRBTree_1_1Node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memItemLeft" align="right" valign="top"><a id="a19921f34f32f777bb3c4b85d4ff1d9de"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#a19921f34f32f777bb3c4b85d4ff1d9de">RBTree</a> ()</td></tr>
+<tr class="memitem:a19921f34f32f777bb3c4b85d4ff1d9de" id="r_a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memItemLeft" align="right" valign="top"><a id="a19921f34f32f777bb3c4b85d4ff1d9de" name="a19921f34f32f777bb3c4b85d4ff1d9de"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RBTree</b> ()</td></tr>
 <tr class="memdesc:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор красно-чёрного дерева по умолчанию <br /></td></tr>
 <tr class="separator:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdab010948bf322d42bd33127b5a1b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#afdab010948bf322d42bd33127b5a1b58">RBTree</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;)</td></tr>
-<tr class="memdesc:afdab010948bf322d42bd33127b5a1b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Констуктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#afdab010948bf322d42bd33127b5a1b58">Подробнее...</a><br /></td></tr>
+<tr class="memitem:afdab010948bf322d42bd33127b5a1b58" id="r_afdab010948bf322d42bd33127b5a1b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdab010948bf322d42bd33127b5a1b58">RBTree</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:afdab010948bf322d42bd33127b5a1b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Констуктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:afdab010948bf322d42bd33127b5a1b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab51e54e07c1adf0ca0c9a5d466427b"><td class="memItemLeft" align="right" valign="top"><a id="abab51e54e07c1adf0ca0c9a5d466427b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#abab51e54e07c1adf0ca0c9a5d466427b">~RBTree</a> ()</td></tr>
+<tr class="memitem:abab51e54e07c1adf0ca0c9a5d466427b" id="r_abab51e54e07c1adf0ca0c9a5d466427b"><td class="memItemLeft" align="right" valign="top"><a id="abab51e54e07c1adf0ca0c9a5d466427b" name="abab51e54e07c1adf0ca0c9a5d466427b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~RBTree</b> ()</td></tr>
 <tr class="memdesc:abab51e54e07c1adf0ca0c9a5d466427b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор красно-чёрного дерева <br /></td></tr>
 <tr class="separator:abab51e54e07c1adf0ca0c9a5d466427b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb80f239f846884ed1a7ca2c0d2515bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#acb80f239f846884ed1a7ca2c0d2515bb">insert</a> (const <a class="el" href="structObject.html">Object</a> &amp;)</td></tr>
-<tr class="memdesc:acb80f239f846884ed1a7ca2c0d2515bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#acb80f239f846884ed1a7ca2c0d2515bb">Подробнее...</a><br /></td></tr>
+<tr class="memitem:acb80f239f846884ed1a7ca2c0d2515bb" id="r_acb80f239f846884ed1a7ca2c0d2515bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb80f239f846884ed1a7ca2c0d2515bb">insert</a> (const <a class="el" href="structObject.html">Object</a> &amp;)</td></tr>
+<tr class="memdesc:acb80f239f846884ed1a7ca2c0d2515bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:acb80f239f846884ed1a7ca2c0d2515bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1afdf2af49051499c00452aa01107255"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#a1afdf2af49051499c00452aa01107255">search</a> (const std::string &amp;, Node *=nullptr) const</td></tr>
-<tr class="memdesc:a1afdf2af49051499c00452aa01107255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для поиска всех объектов в красно-чёрном дереве с заданным ключом  <a href="#a1afdf2af49051499c00452aa01107255">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a1afdf2af49051499c00452aa01107255" id="r_a1afdf2af49051499c00452aa01107255"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1afdf2af49051499c00452aa01107255">search</a> (const std::string &amp;, <a class="el" href="structRBTree_1_1Node.html">Node</a> *=nullptr) const</td></tr>
+<tr class="memdesc:a1afdf2af49051499c00452aa01107255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для поиска всех объектов в красно-чёрном дереве с заданным ключом  <br /></td></tr>
 <tr class="separator:a1afdf2af49051499c00452aa01107255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:ad97759567366df7c32635987b1c1cf3f" id="r_ad97759567366df7c32635987b1c1cf3f"><td class="memItemLeft" align="right" valign="top"><a id="ad97759567366df7c32635987b1c1cf3f" name="ad97759567366df7c32635987b1c1cf3f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad97759567366df7c32635987b1c1cf3f">Color</a> { <b>None</b>
+, <b>Black</b>
+, <b>Red</b>
+ }</td></tr>
+<tr class="memdesc:ad97759567366df7c32635987b1c1cf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление возможных цветов узлов красно-чёрного дерева <br /></td></tr>
+<tr class="separator:ad97759567366df7c32635987b1c1cf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a8853a600df92e77745ab56cda26dee90" id="r_a8853a600df92e77745ab56cda26dee90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8853a600df92e77745ab56cda26dee90">rotateLeft</a> (<a class="el" href="structRBTree_1_1Node.html">Node</a> *)</td></tr>
+<tr class="memdesc:a8853a600df92e77745ab56cda26dee90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для совершения левого поворота вокруг узла красно-чёрного дерева  <br /></td></tr>
+<tr class="separator:a8853a600df92e77745ab56cda26dee90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e6b6bd3c9e41c5dbed1a57b55c3950" id="r_a86e6b6bd3c9e41c5dbed1a57b55c3950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e6b6bd3c9e41c5dbed1a57b55c3950">rotateRight</a> (<a class="el" href="structRBTree_1_1Node.html">Node</a> *)</td></tr>
+<tr class="memdesc:a86e6b6bd3c9e41c5dbed1a57b55c3950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для совершения правого поворота вокруг узла красно-чёрного дерева  <br /></td></tr>
+<tr class="separator:a86e6b6bd3c9e41c5dbed1a57b55c3950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cb3b96eda1c77def99c891ec0e4d16" id="r_a49cb3b96eda1c77def99c891ec0e4d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49cb3b96eda1c77def99c891ec0e4d16">balanceTree</a> (<a class="el" href="structRBTree_1_1Node.html">Node</a> *)</td></tr>
+<tr class="memdesc:a49cb3b96eda1c77def99c891ec0e4d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для восстановления свойств красно-чёрного дерева  <br /></td></tr>
+<tr class="separator:a49cb3b96eda1c77def99c891ec0e4d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a4f6043c7ebe229240f90c9f62ac5aff9" id="r_a4f6043c7ebe229240f90c9f62ac5aff9"><td class="memItemLeft" align="right" valign="top"><a id="a4f6043c7ebe229240f90c9f62ac5aff9" name="a4f6043c7ebe229240f90c9f62ac5aff9"></a>
+<a class="el" href="structRBTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>root</b></td></tr>
+<tr class="memdesc:a4f6043c7ebe229240f90c9f62ac5aff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на корень красно-чёрного дерева <br /></td></tr>
+<tr class="separator:a4f6043c7ebe229240f90c9f62ac5aff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс красно-чёрного дерева </p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="afdab010948bf322d42bd33127b5a1b58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdab010948bf322d42bd33127b5a1b58">&#9670;&nbsp;</a></span>RBTree()</h2>
+<a id="afdab010948bf322d42bd33127b5a1b58" name="afdab010948bf322d42bd33127b5a1b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdab010948bf322d42bd33127b5a1b58">&#9670;&#160;</a></span>RBTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,18 +167,17 @@ $(function() {
         <tr>
           <td class="memname">RBTree::RBTree </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>itemList</em></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>itemList</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Констуктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
-<p>Конструктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.</p>
+<p>Констуктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
+<p>Конструктор красно-чёрного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.</p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">itemList</td><td>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, которые помещаются в дерево при создании </td></tr>
+    <tr><td class="paramname">itemList</td><td>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, которые помещаются в дерево при создании </td></tr>
   </table>
   </dd>
 </dl>
@@ -126,8 +185,41 @@ $(function() {
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="acb80f239f846884ed1a7ca2c0d2515bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb80f239f846884ed1a7ca2c0d2515bb">&#9670;&nbsp;</a></span>insert()</h2>
+<a id="a49cb3b96eda1c77def99c891ec0e4d16" name="a49cb3b96eda1c77def99c891ec0e4d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cb3b96eda1c77def99c891ec0e4d16">&#9670;&#160;</a></span>balanceTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::balanceTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRBTree_1_1Node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для восстановления свойств красно-чёрного дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел, относительно которого восстанавливаются свойства красно-чёрного дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb80f239f846884ed1a7ca2c0d2515bb" name="acb80f239f846884ed1a7ca2c0d2515bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb80f239f846884ed1a7ca2c0d2515bb">&#9670;&#160;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,25 +227,90 @@ $(function() {
         <tr>
           <td class="memname">void RBTree::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, помещаемый в красно-чёрное дерево </td></tr>
+    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, помещаемый в красно-чёрное дерево </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1afdf2af49051499c00452aa01107255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1afdf2af49051499c00452aa01107255">&#9670;&nbsp;</a></span>search()</h2>
+<a id="a8853a600df92e77745ab56cda26dee90" name="a8853a600df92e77745ab56cda26dee90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8853a600df92e77745ab56cda26dee90">&#9670;&#160;</a></span>rotateLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::rotateLeft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRBTree_1_1Node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для совершения левого поворота вокруг узла красно-чёрного дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел, вокруг которого происходит поворот </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86e6b6bd3c9e41c5dbed1a57b55c3950" name="a86e6b6bd3c9e41c5dbed1a57b55c3950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e6b6bd3c9e41c5dbed1a57b55c3950">&#9670;&#160;</a></span>rotateRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::rotateRight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRBTree_1_1Node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для совершения правого поворота вокруг узла красно-чёрного дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел, вокруг которого происходит поворот </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1afdf2af49051499c00452aa01107255" name="a1afdf2af49051499c00452aa01107255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afdf2af49051499c00452aa01107255">&#9670;&#160;</a></span>search()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,19 +318,12 @@ $(function() {
         <tr>
           <td class="memname">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; RBTree::search </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype"><a class="el" href="structRBTree_1_1Node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,12 +331,12 @@ $(function() {
 <p>Метод для поиска всех объектов в красно-чёрном дереве с заданным ключом </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>Ключ, по которому ищутся объекты класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ, по которому ищутся объекты класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
     <tr><td class="paramname">node</td><td>Указатель на узел, начиная с которого происходит поиск </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, чьи ключи совпали с искомым </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, чьи ключи совпали с искомым </dd></dl>
 
 </div>
 </div>
@@ -197,9 +347,8 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
+</div><!-- doc-content -->
 </body>
 </html>

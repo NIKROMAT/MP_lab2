@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['binarytree',['BinaryTree',['../classBinaryTree.html',1,'']]]
+  ['binarytree_0',['BinaryTree',['../classBinaryTree.html',1,'']]]
 ];

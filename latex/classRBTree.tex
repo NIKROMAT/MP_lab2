@@ -1,5 +1,5 @@
-\hypertarget{classRBTree}{}\section{Класс R\+B\+Tree}
-\label{classRBTree}\index{R\+B\+Tree@{R\+B\+Tree}}
+\doxysection{Класс RBTree}
+\hypertarget{classRBTree}{}\label{classRBTree}\index{RBTree@{RBTree}}
 
 
 Класс красно-\/чёрного дерева  
@@ -9,67 +9,141 @@
 
 {\ttfamily \#include $<$lab2.\+h$>$}
 
-\subsection*{Открытые члены}
+\doxysubsubsection*{Классы}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}} 
-\mbox{\hyperlink{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}{R\+B\+Tree}} ()
+struct \mbox{\hyperlink{structRBTree_1_1Node}{Node}}
+\begin{DoxyCompactList}\small\item\em Класс узла красно-\/чёрного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{classRBTree_a19921f34f32f777bb3c4b85d4ff1d9de} 
+{\bfseries RBTree} ()
 \begin{DoxyCompactList}\small\item\em Конструктор красно-\/чёрного дерева по умолчанию \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classRBTree_afdab010948bf322d42bd33127b5a1b58}{R\+B\+Tree}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
-\begin{DoxyCompactList}\small\item\em Констуктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}\label{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}} 
-\mbox{\hyperlink{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}{$\sim$\+R\+B\+Tree}} ()
+\mbox{\hyperlink{classRBTree_afdab010948bf322d42bd33127b5a1b58}{RBTree}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Констуктор красно-\/чёрного дерева по набору объектов класса \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
+\Hypertarget{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b}\label{classRBTree_abab51e54e07c1adf0ca0c9a5d466427b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+RBTree} ()
 \begin{DoxyCompactList}\small\item\em Деструктор красно-\/чёрного дерева \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}{insert}} (const \mbox{\hyperlink{structObject}{Object}} \&)
-\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classRBTree_a1afdf2af49051499c00452aa01107255}{search}} (const std\+::string \&, Node $\ast$=nullptr) const
+\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classRBTree_a1afdf2af49051499c00452aa01107255}{search}} (const std\+::string \&, \mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}=nullptr) const
 \begin{DoxyCompactList}\small\item\em Метод для поиска всех объектов в красно-\/чёрном дереве с заданным ключом \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRBTree_ad97759567366df7c32635987b1c1cf3f}\label{classRBTree_ad97759567366df7c32635987b1c1cf3f} 
+enum \mbox{\hyperlink{classRBTree_ad97759567366df7c32635987b1c1cf3f}{Color}} \{ {\bfseries None}
+, {\bfseries Black}
+, {\bfseries Red}
+ \}
+\begin{DoxyCompactList}\small\item\em Перечисление возможных цветов узлов красно-\/чёрного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRBTree_a8853a600df92e77745ab56cda26dee90}{rotate\+Left}} (\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Метод для совершения левого поворота вокруг узла красно-\/чёрного дерева \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRBTree_a86e6b6bd3c9e41c5dbed1a57b55c3950}{rotate\+Right}} (\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Метод для совершения правого поворота вокруг узла красно-\/чёрного дерева \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRBTree_a49cb3b96eda1c77def99c891ec0e4d16}{balance\+Tree}} (\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Метод для восстановления свойств красно-\/чёрного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRBTree_a4f6043c7ebe229240f90c9f62ac5aff9}\label{classRBTree_a4f6043c7ebe229240f90c9f62ac5aff9} 
+\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\begin{DoxyCompactList}\small\item\em Указатель на корень красно-\/чёрного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Подробное описание}
+\doxysubsection{Подробное описание}
 Класс красно-\/чёрного дерева 
 
-\subsection{Конструктор(ы)}
-\mbox{\Hypertarget{classRBTree_afdab010948bf322d42bd33127b5a1b58}\label{classRBTree_afdab010948bf322d42bd33127b5a1b58}} 
-\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
-\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
-\subsubsection{\texorpdfstring{R\+B\+Tree()}{RBTree()}}
-{\footnotesize\ttfamily R\+B\+Tree\+::\+R\+B\+Tree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List }\end{DoxyParamCaption})}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classRBTree_afdab010948bf322d42bd33127b5a1b58}\index{RBTree@{RBTree}!RBTree@{RBTree}}
+\index{RBTree@{RBTree}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{RBTree()}{RBTree()}}
+{\footnotesize\ttfamily \label{classRBTree_afdab010948bf322d42bd33127b5a1b58} 
+RBTree\+::\+RBTree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List}{}\end{DoxyParamCaption})}
 
 
 
-Констуктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. 
+Констуктор красно-\/чёрного дерева по набору объектов класса \doxylink{structObject}{Object}. 
 
-Конструктор красно-\/чёрного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}.
+Конструктор красно-\/чёрного дерева по набору объектов класса \doxylink{structObject}{Object}.
 
 
 \begin{DoxyParams}{Аргументы}
-{\em item\+List} & Список объектов класса \mbox{\hyperlink{structObject}{Object}}, которые помещаются в дерево при создании \\
+{\em item\+List} & Список объектов класса \doxylink{structObject}{Object}, которые помещаются в дерево при создании \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{Методы}
-\mbox{\Hypertarget{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}\label{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}} 
-\index{R\+B\+Tree@{R\+B\+Tree}!insert@{insert}}
-\index{insert@{insert}!R\+B\+Tree@{R\+B\+Tree}}
-\subsubsection{\texorpdfstring{insert()}{insert()}}
-{\footnotesize\ttfamily void R\+B\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+\doxysubsection{Методы}
+\Hypertarget{classRBTree_a49cb3b96eda1c77def99c891ec0e4d16}\index{RBTree@{RBTree}!balanceTree@{balanceTree}}
+\index{balanceTree@{balanceTree}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{balanceTree()}{balanceTree()}}
+{\footnotesize\ttfamily \label{classRBTree_a49cb3b96eda1c77def99c891ec0e4d16} 
+void RBTree\+::balance\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. 
+Метод для восстановления свойств красно-\/чёрного дерева 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, помещаемый в красно-\/чёрное дерево \\
+{\em node} & Указатель на узел, относительно которого восстанавливаются свойства красно-\/чёрного дерева \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classRBTree_a1afdf2af49051499c00452aa01107255}\label{classRBTree_a1afdf2af49051499c00452aa01107255}} 
-\index{R\+B\+Tree@{R\+B\+Tree}!search@{search}}
-\index{search@{search}!R\+B\+Tree@{R\+B\+Tree}}
-\subsubsection{\texorpdfstring{search()}{search()}}
-{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ R\+B\+Tree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{Node $\ast$}]{node = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+\Hypertarget{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb}\index{RBTree@{RBTree}!insert@{insert}}
+\index{insert@{insert}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classRBTree_acb80f239f846884ed1a7ca2c0d2515bb} 
+void RBTree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Метод для вставки нового объекта класса \doxylink{structObject}{Object}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em obj} & Объект класса \doxylink{structObject}{Object}, помещаемый в красно-\/чёрное дерево \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classRBTree_a8853a600df92e77745ab56cda26dee90}\index{RBTree@{RBTree}!rotateLeft@{rotateLeft}}
+\index{rotateLeft@{rotateLeft}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{rotateLeft()}{rotateLeft()}}
+{\footnotesize\ttfamily \label{classRBTree_a8853a600df92e77745ab56cda26dee90} 
+void RBTree\+::rotate\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод для совершения левого поворота вокруг узла красно-\/чёрного дерева 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em node} & Указатель на узел, вокруг которого происходит поворот \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classRBTree_a86e6b6bd3c9e41c5dbed1a57b55c3950}\index{RBTree@{RBTree}!rotateRight@{rotateRight}}
+\index{rotateRight@{rotateRight}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{rotateRight()}{rotateRight()}}
+{\footnotesize\ttfamily \label{classRBTree_a86e6b6bd3c9e41c5dbed1a57b55c3950} 
+void RBTree\+::rotate\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод для совершения правого поворота вокруг узла красно-\/чёрного дерева 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em node} & Указатель на узел, вокруг которого происходит поворот \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classRBTree_a1afdf2af49051499c00452aa01107255}\index{RBTree@{RBTree}!search@{search}}
+\index{search@{search}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{classRBTree_a1afdf2af49051499c00452aa01107255} 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ RBTree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key}{, }\item[{\mbox{\hyperlink{structRBTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{ = {\ttfamily nullptr}}\end{DoxyParamCaption}) const}
 
 
 
@@ -77,13 +151,13 @@ std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{cl
 
 
 \begin{DoxyParams}{Аргументы}
-{\em key} & Ключ, по которому ищутся объекты класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em key} & Ключ, по которому ищутся объекты класса \doxylink{structObject}{Object} \\
 \hline
 {\em node} & Указатель на узел, начиная с которого происходит поиск \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
-Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+Список объектов класса \doxylink{structObject}{Object}, чьи ключи совпали с искомым 
 \end{DoxyReturn}
 
 

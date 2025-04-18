@@ -6,7 +6,7 @@ OBJ = main.o lab2.o
 OTHER = ${TARGET} graphics.png results.csv target_key.txt datasets latex html
 
 
-.PHONY : clean cleanall all graph doc generate
+.PHONY : clean cleanall all graphs doc generate
 
 all : ${TARGET} target_key.txt datasets 
 
@@ -21,12 +21,12 @@ lab2.o : lab2.cpp
 	${CXX} -c $^ -o $@
 
 
-graph : graphics.png
+graphs : graphics.png collisions.png
 
-graphics.png : graphics.py results.csv
+graphics.png collisions.png &: graphics.py results.csv collisions.csv
 	${PY} graphics.py
 
-results.csv : ${TARGET} | target_key.txt datasets
+results.csv collisions.csv &: ${TARGET} | target_key.txt datasets
 	./${TARGET}
 
 target_key.txt datasets &: | datamaker.py

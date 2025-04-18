@@ -1,5 +1,5 @@
-\hypertarget{classBinaryTree}{}\section{Класс Binary\+Tree}
-\label{classBinaryTree}\index{Binary\+Tree@{Binary\+Tree}}
+\doxysection{Класс Binary\+Tree}
+\hypertarget{classBinaryTree}{}\label{classBinaryTree}\index{BinaryTree@{BinaryTree}}
 
 
 Класс бинарного дерева  
@@ -9,65 +9,76 @@
 
 {\ttfamily \#include $<$lab2.\+h$>$}
 
-\subsection*{Открытые члены}
+\doxysubsubsection*{Классы}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBinaryTree_adf45bce605436b26c353b87e27bffe50}\label{classBinaryTree_adf45bce605436b26c353b87e27bffe50}} 
-\mbox{\hyperlink{classBinaryTree_adf45bce605436b26c353b87e27bffe50}{Binary\+Tree}} ()
+struct \mbox{\hyperlink{structBinaryTree_1_1Node}{Node}}
+\begin{DoxyCompactList}\small\item\em Класс узла бинарного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBinaryTree_adf45bce605436b26c353b87e27bffe50}\label{classBinaryTree_adf45bce605436b26c353b87e27bffe50} 
+{\bfseries Binary\+Tree} ()
 \begin{DoxyCompactList}\small\item\em Конструктор бинарного дерева по умолчанию \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}{Binary\+Tree}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&)
-\begin{DoxyCompactList}\small\item\em Конструктор бинарного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}\label{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}} 
-\mbox{\hyperlink{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}{$\sim$\+Binary\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор бинарного дерева по набору объектов класса \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
+\Hypertarget{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236}\label{classBinaryTree_a48c23a22a8400765d099e0e6fcebc236} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Binary\+Tree} ()
 \begin{DoxyCompactList}\small\item\em Деструктор бинарного дерева \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}{insert}} (const \mbox{\hyperlink{structObject}{Object}} \&)
-\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Метод для вставки нового объекта класса \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}{search}} (const std\+::string \&) const
 \begin{DoxyCompactList}\small\item\em Метод для поиска всех объектов в бинарном дереве с заданным ключом \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBinaryTree_ae7e672ece25489eb84fc177bbe866023}\label{classBinaryTree_ae7e672ece25489eb84fc177bbe866023} 
+\mbox{\hyperlink{structBinaryTree_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\begin{DoxyCompactList}\small\item\em Указатель на корень бинарного дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Подробное описание}
+\doxysubsection{Подробное описание}
 Класс бинарного дерева 
 
-\subsection{Конструктор(ы)}
-\mbox{\Hypertarget{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}\label{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}} 
-\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
-\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
-\subsubsection{\texorpdfstring{Binary\+Tree()}{BinaryTree()}}
-{\footnotesize\ttfamily Binary\+Tree\+::\+Binary\+Tree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List }\end{DoxyParamCaption})}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425}\index{BinaryTree@{BinaryTree}!BinaryTree@{BinaryTree}}
+\index{BinaryTree@{BinaryTree}!BinaryTree@{BinaryTree}}
+\doxysubsubsection{\texorpdfstring{BinaryTree()}{BinaryTree()}}
+{\footnotesize\ttfamily \label{classBinaryTree_a40a2af97186493b6bad3ee90e9a9c425} 
+Binary\+Tree\+::\+Binary\+Tree (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{item\+List}{}\end{DoxyParamCaption})}
 
 
 
-Конструктор бинарного дерева по набору объектов класса \mbox{\hyperlink{structObject}{Object}}. 
+Конструктор бинарного дерева по набору объектов класса \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em item\+List} & Список объектов класса \mbox{\hyperlink{structObject}{Object}}, которые помещаются в дерево при создании \\
+{\em item\+List} & Список объектов класса \doxylink{structObject}{Object}, которые помещаются в дерево при создании \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{Методы}
-\mbox{\Hypertarget{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}\label{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}} 
-\index{Binary\+Tree@{Binary\+Tree}!insert@{insert}}
-\index{insert@{insert}!Binary\+Tree@{Binary\+Tree}}
-\subsubsection{\texorpdfstring{insert()}{insert()}}
-{\footnotesize\ttfamily void Binary\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+\doxysubsection{Методы}
+\Hypertarget{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac}\index{BinaryTree@{BinaryTree}!insert@{insert}}
+\index{insert@{insert}!BinaryTree@{BinaryTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classBinaryTree_af3d8f80f5451cbacb0338fa533d135ac} 
+void Binary\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj}{}\end{DoxyParamCaption})}
 
 
 
-Метод для вставки нового объекта класса \mbox{\hyperlink{structObject}{Object}}. 
+Метод для вставки нового объекта класса \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, помещаемый в бинарное дерево \\
+{\em obj} & Объект класса \doxylink{structObject}{Object}, помещаемый в бинарное дерево \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}\label{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}} 
-\index{Binary\+Tree@{Binary\+Tree}!search@{search}}
-\index{search@{search}!Binary\+Tree@{Binary\+Tree}}
-\subsubsection{\texorpdfstring{search()}{search()}}
-{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ Binary\+Tree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+\Hypertarget{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c}\index{BinaryTree@{BinaryTree}!search@{search}}
+\index{search@{search}!BinaryTree@{BinaryTree}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{classBinaryTree_a15cfc97afa0ee9607b6c216f7e8d5e3c} 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ Binary\+Tree\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -75,11 +86,11 @@ std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{cl
 
 
 \begin{DoxyParams}{Аргументы}
-{\em key} & Ключ, по которому ищутся объекты класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em key} & Ключ, по которому ищутся объекты класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
-Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+Список объектов класса \doxylink{structObject}{Object}, чьи ключи совпали с искомым 
 \end{DoxyReturn}
 
 

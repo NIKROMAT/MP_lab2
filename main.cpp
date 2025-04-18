@@ -24,7 +24,8 @@ int main()
 {
   
   std::string in_filepath_base  = "./datasets/dataset_"; ///< Основа для пути к набору данных
-  std::string out_filepath = "./results.csv";            ///< Путь к файлу с результатами
+  std::string res_filepath = "./results.csv";            ///< Путь к файлу с результатами
+  std::string col_filepath = "./collisions.csv";            ///< Путь к файлу с результатами
   std::string target_filepath = "./target_key.txt";      ///< Путь к файлу с искомым ключом
   
   // Получение искомого ключа из файла
@@ -42,12 +43,20 @@ int main()
 
 
   // Открытие файла результатов и ввод названий полей
-  std::ofstream out_file(out_filepath);
+  std::ofstream res_file(res_filepath);
 
-  if (out_file.is_open())
-    std::cout << "Open " + out_filepath + "\n\n";
+  if (res_file.is_open())
+    std::cout << "Open " + res_filepath + "\n\n";
 
-  out_file << "Size,Linear Search,Binary Tree,Red-Black Tree,Hash Table,Multimap\n";
+  res_file << "Size,Linear Search,Binary Tree,Red-Black Tree,Hash Table,Multimap\n";
+
+  // Открытие файла коллизий и ввод названий полей
+  std::ofstream col_file(col_filepath);
+
+  if (col_file.is_open())
+    std::cout << "Open " + col_filepath + "\n\n";
+
+  col_file << "Size,Collisions\n";
 
 
 
@@ -91,7 +100,9 @@ int main()
 
     
     // Вывод и запись размера набора данных
-    out_file << step << ",";
+    res_file << step << ",";
+    col_file << step << ",";
+    
     std::cout << "    " << step << " lines was read\n\n";
 
 
@@ -109,7 +120,7 @@ int main()
       linearSearch(vec, target);
       end   = std::chrono::high_resolution_clock::now();
 
-      out_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
+      res_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
       std::cout << "completed\n" << std::flush;
     }
 
@@ -123,7 +134,7 @@ int main()
       binTree.search(target);
       end   = std::chrono::high_resolution_clock::now();
 
-      out_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
+      res_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
       std::cout << "completed\n" << std::flush;
     }
 
@@ -137,7 +148,7 @@ int main()
       rbTree.search(target);
       end   = std::chrono::high_resolution_clock::now();
 
-      out_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
+      res_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
       std::cout << "completed\n" << std::flush;
     }
 
@@ -151,7 +162,9 @@ int main()
       hashTable.search(target);
       end   = std::chrono::high_resolution_clock::now();
 
-      out_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
+      res_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << ",";
+      col_file << hashTable.getCollisions() << "\n";
+
       std::cout << "completed\n" 
                 << "\tcollisions: " << hashTable.getCollisions() << "\n"
                 << "\tfullness: " << hashTable.getFullness() << "/" << hashTable.getCapacity() << "\n" 
@@ -171,7 +184,7 @@ int main()
       mmap.equal_range(target);
       end   = std::chrono::high_resolution_clock::now();
 
-      out_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "\n";
+      res_file << std::chrono::duration_cast<std::chrono::microseconds>(end-start).count() << "\n";
       std::cout << "completed\n\n\n" << std::flush;
     }
 
@@ -179,10 +192,10 @@ int main()
   }
 
   // Закрытие файла с результатами
-  out_file.close();
+  res_file.close();
   
-  if (!out_file.is_open())
-  std::cout << "Close " + out_filepath + "\n";
+  if (!res_file.is_open())
+  std::cout << "Close " + res_filepath + "\n";
   
   
   return 0;

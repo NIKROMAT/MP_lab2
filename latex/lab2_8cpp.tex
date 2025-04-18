@@ -1,44 +1,44 @@
-\hypertarget{lab2_8cpp}{}\section{Файл lab2.\+cpp}
-\label{lab2_8cpp}\index{lab2.\+cpp@{lab2.\+cpp}}
+\doxysection{Файл lab2.\+cpp}
+\hypertarget{lab2_8cpp}{}\label{lab2_8cpp}\index{lab2.cpp@{lab2.cpp}}
 
 
-Файл с реализацией классов, функций и методов из \mbox{\hyperlink{lab2_8h}{lab2.\+h}}.  
+Файл с реализацией классов, функций и методов из \doxylink{lab2_8h}{lab2.\+h}.  
 
 
-{\ttfamily \#include \char`\"{}lab2.\+h\char`\"{}}\newline
+{\ttfamily \#include "{}lab2.\+h"{}}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
-\subsection*{Функции}
+\doxysubsubsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{lab2_8cpp_ae48997bfc3e01fa200cd349b7a00754b}{operator$>$}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}больше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}больше"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{lab2_8cpp_a9a92a0af10fbc1055a02f79a1f1fa964}{operator$>$=}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}не меньше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}не меньше"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{lab2_8cpp_a8da044199e796b4d7ab9112dfedfc9e4}{operator==}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}равно\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}равно"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{lab2_8cpp_ae862f8139ecadd3936fe4490469e869f}{operator$<$=}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}не больше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}не больше"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{lab2_8cpp_ad28af33905bf3c65de6ccabff950cdd8}{operator$<$}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}меньше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}меньше"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{lab2_8cpp_a722a5464705ccb74b21b44cc2a4a1141}{operator!=}} (const \mbox{\hyperlink{structObject}{Object}} \&obj1, const \mbox{\hyperlink{structObject}{Object}} \&obj2)
-\begin{DoxyCompactList}\small\item\em Оператор сравнения \char`\"{}не равно\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. \end{DoxyCompactList}\item 
-std\+::ifstream \& \mbox{\hyperlink{lab2_8cpp_a34a0fca5dba0e848c4cfabf5bd5bc24f}{operator$>$$>$}} (std\+::ifstream \&in, \mbox{\hyperlink{structObject}{Object}} \&obj)
-\begin{DoxyCompactList}\small\item\em Оператор чтения объектов типа \mbox{\hyperlink{structObject}{Object}} из потока \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{lab2_8cpp_a1795ade3f2c5c433318854e2b93d1e69}{linear\+Search}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&vec, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}не равно"{} для объектов типа \doxylink{structObject}{Object}. \end{DoxyCompactList}\item 
+std\+::ifstream \& \mbox{\hyperlink{lab2_8cpp_af86fe406aaaafbae8d5490eb361b84a0}{operator$>$$>$}} (std\+::ifstream \&in, \mbox{\hyperlink{structObject}{Object}} \&obj)
+\begin{DoxyCompactList}\small\item\em Оператор чтения объектов типа \doxylink{structObject}{Object} из потока \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{lab2_8cpp_a1b63c027b9dcb5ac06068132e354c524}{linear\+Search}} (const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&vec, const std\+::string \&key)
 \begin{DoxyCompactList}\small\item\em Функция для линейного поиска объектов по ключу \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Подробное описание}
-Файл с реализацией классов, функций и методов из \mbox{\hyperlink{lab2_8h}{lab2.\+h}}. 
+\doxysubsection{Подробное описание}
+Файл с реализацией классов, функций и методов из \doxylink{lab2_8h}{lab2.\+h}. 
 
 
 
-\subsection{Функции}
-\mbox{\Hypertarget{lab2_8cpp_a1795ade3f2c5c433318854e2b93d1e69}\label{lab2_8cpp_a1795ade3f2c5c433318854e2b93d1e69}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!linear\+Search@{linear\+Search}}
-\index{linear\+Search@{linear\+Search}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{linear\+Search()}{linearSearch()}}
-{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structObject}{Object}}$>$ linear\+Search (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{vec,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+\doxysubsection{Функции}
+\Hypertarget{lab2_8cpp_a1b63c027b9dcb5ac06068132e354c524}\index{lab2.cpp@{lab2.cpp}!linearSearch@{linearSearch}}
+\index{linearSearch@{linearSearch}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{linearSearch()}{linearSearch()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_a1b63c027b9dcb5ac06068132e354c524} 
+std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ linear\+Search (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \&}]{vec}{, }\item[{const std\+::string \&}]{key}{}\end{DoxyParamCaption})}
 
 
 
@@ -52,142 +52,142 @@ std\+::vector$<$ \mbox{\hyperlink{structObject}{Object}} $>$ \mbox{\hyperlink{la
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
-Список объектов класса \mbox{\hyperlink{structObject}{Object}}, чьи ключи совпали с искомым 
+Список объектов класса \doxylink{structObject}{Object}, чьи ключи совпали с искомым 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_a722a5464705ccb74b21b44cc2a4a1141}\label{lab2_8cpp_a722a5464705ccb74b21b44cc2a4a1141}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator"!=@{operator"!=}}
-\index{operator"!=@{operator"!=}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
-{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_a722a5464705ccb74b21b44cc2a4a1141}\index{lab2.cpp@{lab2.cpp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_a722a5464705ccb74b21b44cc2a4a1141} 
+bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}не равно\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}не равно"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_ad28af33905bf3c65de6ccabff950cdd8}\label{lab2_8cpp_ad28af33905bf3c65de6ccabff950cdd8}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator$<$@{operator$<$}}
-\index{operator$<$@{operator$<$}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
-{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_ad28af33905bf3c65de6ccabff950cdd8}\index{lab2.cpp@{lab2.cpp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_ad28af33905bf3c65de6ccabff950cdd8} 
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}меньше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}меньше"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_ae862f8139ecadd3936fe4490469e869f}\label{lab2_8cpp_ae862f8139ecadd3936fe4490469e869f}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator$<$=@{operator$<$=}}
-\index{operator$<$=@{operator$<$=}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
-{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_ae862f8139ecadd3936fe4490469e869f}\index{lab2.cpp@{lab2.cpp}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_ae862f8139ecadd3936fe4490469e869f} 
+bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}не больше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}не больше"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_a8da044199e796b4d7ab9112dfedfc9e4}\label{lab2_8cpp_a8da044199e796b4d7ab9112dfedfc9e4}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator==@{operator==}}
-\index{operator==@{operator==}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_a8da044199e796b4d7ab9112dfedfc9e4}\index{lab2.cpp@{lab2.cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_a8da044199e796b4d7ab9112dfedfc9e4} 
+bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}равно\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}равно"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_ae48997bfc3e01fa200cd349b7a00754b}\label{lab2_8cpp_ae48997bfc3e01fa200cd349b7a00754b}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator$>$@{operator$>$}}
-\index{operator$>$@{operator$>$}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
-{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_ae48997bfc3e01fa200cd349b7a00754b}\index{lab2.cpp@{lab2.cpp}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_ae48997bfc3e01fa200cd349b7a00754b} 
+bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}больше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}больше"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_a9a92a0af10fbc1055a02f79a1f1fa964}\label{lab2_8cpp_a9a92a0af10fbc1055a02f79a1f1fa964}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator$>$=@{operator$>$=}}
-\index{operator$>$=@{operator$>$=}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
-{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1,  }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2 }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_a9a92a0af10fbc1055a02f79a1f1fa964}\index{lab2.cpp@{lab2.cpp}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_a9a92a0af10fbc1055a02f79a1f1fa964} 
+bool operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj1}{, }\item[{const \mbox{\hyperlink{structObject}{Object}} \&}]{obj2}{}\end{DoxyParamCaption})}
 
 
 
-Оператор сравнения \char`\"{}не меньше\char`\"{} для объектов типа \mbox{\hyperlink{structObject}{Object}}. 
+Оператор сравнения "{}не меньше"{} для объектов типа \doxylink{structObject}{Object}. 
 
 
 \begin{DoxyParams}{Аргументы}
-{\em obj1} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj1} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
-{\em obj2} & первый операнд класса \mbox{\hyperlink{structObject}{Object}} \\
+{\em obj2} & первый операнд класса \doxylink{structObject}{Object} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
 Поочерёдно сравниваются поля \mbox{[}Дата отправки, Время отправки, Номер поезда, Время в пути\mbox{]} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{lab2_8cpp_a34a0fca5dba0e848c4cfabf5bd5bc24f}\label{lab2_8cpp_a34a0fca5dba0e848c4cfabf5bd5bc24f}} 
-\index{lab2.\+cpp@{lab2.\+cpp}!operator$>$$>$@{operator$>$$>$}}
-\index{operator$>$$>$@{operator$>$$>$}!lab2.\+cpp@{lab2.\+cpp}}
-\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
-{\footnotesize\ttfamily std\+::ifstream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in,  }\item[{\mbox{\hyperlink{structObject}{Object}} \&}]{obj }\end{DoxyParamCaption})}
+\Hypertarget{lab2_8cpp_af86fe406aaaafbae8d5490eb361b84a0}\index{lab2.cpp@{lab2.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!lab2.cpp@{lab2.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \label{lab2_8cpp_af86fe406aaaafbae8d5490eb361b84a0} 
+std\+::ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in}{, }\item[{\mbox{\hyperlink{structObject}{Object}} \&}]{obj}{}\end{DoxyParamCaption})}
 
 
 
-Оператор чтения объектов типа \mbox{\hyperlink{structObject}{Object}} из потока 
+Оператор чтения объектов типа \doxylink{structObject}{Object} из потока 
 
 
 \begin{DoxyParams}{Аргументы}
 {\em in} & Поток, из которого происходит чтение данных \\
 \hline
-{\em obj} & Объект класса \mbox{\hyperlink{structObject}{Object}}, в который происходит запись \\
+{\em obj} & Объект класса \doxylink{structObject}{Object}, в который происходит запись \\
 \hline
 \end{DoxyParams}

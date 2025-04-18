@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "bdghiklmnorst~",
-  1: "bhor",
+  0: "bcdefghiklmnoprst~",
+  1: "bhnor",
   2: "lm",
-  3: "bghiklmors~",
-  4: "dt",
-  5: "n"
+  3: "beghiklmnors~",
+  4: "cdefiknprt",
+  5: "c",
+  6: "n"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "defines"
+  5: "enums",
+  6: "defines"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Файлы",
   3: "Функции",
   4: "Переменные",
-  5: "Макросы"
+  5: "Перечисления",
+  6: "Макросы"
 };
 

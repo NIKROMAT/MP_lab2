@@ -1,17 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 2: Файл lab2.cpp</title>
+<title>Лабораторная работа 2: Файл lab2.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,9 +24,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 2
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 2
    </div>
   </td>
  </tr>
@@ -29,22 +34,33 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.13.2 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -54,77 +70,77 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 </div><!-- top -->
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Функции</a>  </div>
-  <div class="headertitle">
-<div class="title">Файл lab2.cpp</div>  </div>
+  <div class="headertitle"><div class="title">Файл lab2.cpp</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Файл с реализацией классов, функций и методов из <a class="el" href="lab2_8h.html" title="Заголовочный файл содержащий необходимые классы и функции ">lab2.h</a>.  
+<p>Файл с реализацией классов, функций и методов из <a class="el" href="lab2_8h.html" title="Заголовочный файл содержащий необходимые классы и функции">lab2.h</a>.  
 <a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lab2_8h_source.html">lab2.h</a>&quot;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ae48997bfc3e01fa200cd349b7a00754b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#ae48997bfc3e01fa200cd349b7a00754b">operator&gt;</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:ae48997bfc3e01fa200cd349b7a00754b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#ae48997bfc3e01fa200cd349b7a00754b">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ae48997bfc3e01fa200cd349b7a00754b" id="r_ae48997bfc3e01fa200cd349b7a00754b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48997bfc3e01fa200cd349b7a00754b">operator&gt;</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:ae48997bfc3e01fa200cd349b7a00754b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:ae48997bfc3e01fa200cd349b7a00754b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a92a0af10fbc1055a02f79a1f1fa964"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#a9a92a0af10fbc1055a02f79a1f1fa964">operator&gt;=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:a9a92a0af10fbc1055a02f79a1f1fa964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#a9a92a0af10fbc1055a02f79a1f1fa964">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a9a92a0af10fbc1055a02f79a1f1fa964" id="r_a9a92a0af10fbc1055a02f79a1f1fa964"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a92a0af10fbc1055a02f79a1f1fa964">operator&gt;=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:a9a92a0af10fbc1055a02f79a1f1fa964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:a9a92a0af10fbc1055a02f79a1f1fa964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8da044199e796b4d7ab9112dfedfc9e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#a8da044199e796b4d7ab9112dfedfc9e4">operator==</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:a8da044199e796b4d7ab9112dfedfc9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#a8da044199e796b4d7ab9112dfedfc9e4">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a8da044199e796b4d7ab9112dfedfc9e4" id="r_a8da044199e796b4d7ab9112dfedfc9e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da044199e796b4d7ab9112dfedfc9e4">operator==</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:a8da044199e796b4d7ab9112dfedfc9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:a8da044199e796b4d7ab9112dfedfc9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae862f8139ecadd3936fe4490469e869f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#ae862f8139ecadd3936fe4490469e869f">operator&lt;=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:ae862f8139ecadd3936fe4490469e869f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#ae862f8139ecadd3936fe4490469e869f">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ae862f8139ecadd3936fe4490469e869f" id="r_ae862f8139ecadd3936fe4490469e869f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae862f8139ecadd3936fe4490469e869f">operator&lt;=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:ae862f8139ecadd3936fe4490469e869f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:ae862f8139ecadd3936fe4490469e869f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28af33905bf3c65de6ccabff950cdd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#ad28af33905bf3c65de6ccabff950cdd8">operator&lt;</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:ad28af33905bf3c65de6ccabff950cdd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#ad28af33905bf3c65de6ccabff950cdd8">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ad28af33905bf3c65de6ccabff950cdd8" id="r_ad28af33905bf3c65de6ccabff950cdd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad28af33905bf3c65de6ccabff950cdd8">operator&lt;</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:ad28af33905bf3c65de6ccabff950cdd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:ad28af33905bf3c65de6ccabff950cdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722a5464705ccb74b21b44cc2a4a1141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#a722a5464705ccb74b21b44cc2a4a1141">operator!=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
-<tr class="memdesc:a722a5464705ccb74b21b44cc2a4a1141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#a722a5464705ccb74b21b44cc2a4a1141">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a722a5464705ccb74b21b44cc2a4a1141" id="r_a722a5464705ccb74b21b44cc2a4a1141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a722a5464705ccb74b21b44cc2a4a1141">operator!=</a> (const <a class="el" href="structObject.html">Object</a> &amp;obj1, const <a class="el" href="structObject.html">Object</a> &amp;obj2)</td></tr>
+<tr class="memdesc:a722a5464705ccb74b21b44cc2a4a1141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор сравнения "не равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:a722a5464705ccb74b21b44cc2a4a1141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a0fca5dba0e848c4cfabf5bd5bc24f"><td class="memItemLeft" align="right" valign="top">std::ifstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#a34a0fca5dba0e848c4cfabf5bd5bc24f">operator&gt;&gt;</a> (std::ifstream &amp;in, <a class="el" href="structObject.html">Object</a> &amp;obj)</td></tr>
-<tr class="memdesc:a34a0fca5dba0e848c4cfabf5bd5bc24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор чтения объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> из потока  <a href="#a34a0fca5dba0e848c4cfabf5bd5bc24f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a34a0fca5dba0e848c4cfabf5bd5bc24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1795ade3f2c5c433318854e2b93d1e69"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lab2_8cpp.html#a1795ade3f2c5c433318854e2b93d1e69">linearSearch</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;vec, const std::string &amp;key)</td></tr>
-<tr class="memdesc:a1795ade3f2c5c433318854e2b93d1e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для линейного поиска объектов по ключу  <a href="#a1795ade3f2c5c433318854e2b93d1e69">Подробнее...</a><br /></td></tr>
-<tr class="separator:a1795ade3f2c5c433318854e2b93d1e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86fe406aaaafbae8d5490eb361b84a0" id="r_af86fe406aaaafbae8d5490eb361b84a0"><td class="memItemLeft" align="right" valign="top">std::ifstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86fe406aaaafbae8d5490eb361b84a0">operator&gt;&gt;</a> (std::ifstream &amp;in, <a class="el" href="structObject.html">Object</a> &amp;obj)</td></tr>
+<tr class="memdesc:af86fe406aaaafbae8d5490eb361b84a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор чтения объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> из потока  <br /></td></tr>
+<tr class="separator:af86fe406aaaafbae8d5490eb361b84a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b63c027b9dcb5ac06068132e354c524" id="r_a1b63c027b9dcb5ac06068132e354c524"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b63c027b9dcb5ac06068132e354c524">linearSearch</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;vec, const std::string &amp;key)</td></tr>
+<tr class="memdesc:a1b63c027b9dcb5ac06068132e354c524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для линейного поиска объектов по ключу  <br /></td></tr>
+<tr class="separator:a1b63c027b9dcb5ac06068132e354c524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Файл с реализацией классов, функций и методов из <a class="el" href="lab2_8h.html" title="Заголовочный файл содержащий необходимые классы и функции ">lab2.h</a>. </p>
+<div class="textblock"><p>Файл с реализацией классов, функций и методов из <a class="el" href="lab2_8h.html" title="Заголовочный файл содержащий необходимые классы и функции">lab2.h</a>. </p>
 </div><h2 class="groupheader">Функции</h2>
-<a id="a1795ade3f2c5c433318854e2b93d1e69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1795ade3f2c5c433318854e2b93d1e69">&#9670;&nbsp;</a></span>linearSearch()</h2>
+<a id="a1b63c027b9dcb5ac06068132e354c524" name="a1b63c027b9dcb5ac06068132e354c524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b63c027b9dcb5ac06068132e354c524">&#9670;&#160;</a></span>linearSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structObject.html">Object</a>&gt; linearSearch </td>
+          <td class="memname">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; linearSearch </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -137,12 +153,12 @@ $(function() {
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, чьи ключи совпали с искомым </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, чьи ключи совпали с искомым </dd></dl>
 
 </div>
 </div>
-<a id="a722a5464705ccb74b21b44cc2a4a1141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a722a5464705ccb74b21b44cc2a4a1141">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="a722a5464705ccb74b21b44cc2a4a1141" name="a722a5464705ccb74b21b44cc2a4a1141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722a5464705ccb74b21b44cc2a4a1141">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,28 +166,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "не равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "не равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -179,8 +188,8 @@ $(function() {
 
 </div>
 </div>
-<a id="ad28af33905bf3c65de6ccabff950cdd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad28af33905bf3c65de6ccabff950cdd8">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+<a id="ad28af33905bf3c65de6ccabff950cdd8" name="ad28af33905bf3c65de6ccabff950cdd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28af33905bf3c65de6ccabff950cdd8">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,28 +197,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,8 +219,8 @@ $(function() {
 
 </div>
 </div>
-<a id="ae862f8139ecadd3936fe4490469e869f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae862f8139ecadd3936fe4490469e869f">&#9670;&nbsp;</a></span>operator&lt;=()</h2>
+<a id="ae862f8139ecadd3936fe4490469e869f" name="ae862f8139ecadd3936fe4490469e869f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae862f8139ecadd3936fe4490469e869f">&#9670;&#160;</a></span>operator&lt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,28 +228,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator&lt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "не больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "не больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,8 +250,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a8da044199e796b4d7ab9112dfedfc9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8da044199e796b4d7ab9112dfedfc9e4">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a8da044199e796b4d7ab9112dfedfc9e4" name="a8da044199e796b4d7ab9112dfedfc9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da044199e796b4d7ab9112dfedfc9e4">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,28 +259,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "равно" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,8 +281,8 @@ $(function() {
 
 </div>
 </div>
-<a id="ae48997bfc3e01fa200cd349b7a00754b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae48997bfc3e01fa200cd349b7a00754b">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+<a id="ae48997bfc3e01fa200cd349b7a00754b" name="ae48997bfc3e01fa200cd349b7a00754b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48997bfc3e01fa200cd349b7a00754b">&#9670;&#160;</a></span>operator&gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,28 +290,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "больше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,8 +312,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a9a92a0af10fbc1055a02f79a1f1fa964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a92a0af10fbc1055a02f79a1f1fa964">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
+<a id="a9a92a0af10fbc1055a02f79a1f1fa964" name="a9a92a0af10fbc1055a02f79a1f1fa964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a92a0af10fbc1055a02f79a1f1fa964">&#9670;&#160;</a></span>operator&gt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,28 +321,21 @@ $(function() {
         <tr>
           <td class="memname">bool operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj1</em>, </td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор сравнения "не меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Оператор сравнения "не меньше" для объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
-    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">obj1</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
+    <tr><td class="paramname">obj2</td><td>первый операнд класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,37 +343,30 @@ $(function() {
 
 </div>
 </div>
-<a id="a34a0fca5dba0e848c4cfabf5bd5bc24f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34a0fca5dba0e848c4cfabf5bd5bc24f">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+<a id="af86fe406aaaafbae8d5490eb361b84a0" name="af86fe406aaaafbae8d5490eb361b84a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86fe406aaaafbae8d5490eb361b84a0">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ifstream&amp; operator&gt;&gt; </td>
+          <td class="memname">std::ifstream &amp; operator&gt;&gt; </td>
           <td>(</td>
-          <td class="paramtype">std::ifstream &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramtype">std::ifstream &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype"><a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор чтения объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> из потока </p>
+<p>Оператор чтения объектов типа <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> из потока </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Поток, из которого происходит чтение данных </td></tr>
-    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, в который происходит запись </td></tr>
+    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, в который происходит запись </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,9 +376,8 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
+</div><!-- doc-content -->
 </body>
 </html>

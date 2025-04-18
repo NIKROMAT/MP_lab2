@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['depart_5fdate',['depart_date',['../structObject.html#a7d3a48437511af10875c026b9542d035',1,'Object']]],
-  ['depart_5ftime',['depart_time',['../structObject.html#adde87e1918bc544551db4d1e299e255c',1,'Object']]]
+  ['collisions_0',['collisions',['../classHashTable.html#a29afc61eb7aa87878409e733de088a2a',1,'HashTable']]],
+  ['color_1',['Color',['../classRBTree.html#ad97759567366df7c32635987b1c1cf3f',1,'RBTree']]],
+  ['color_2',['color',['../structRBTree_1_1Node.html#ae0feb930f3d3ce07f658f5b18ca75202',1,'RBTree::Node']]]
 ];

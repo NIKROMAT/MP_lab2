@@ -4,11 +4,13 @@ import random as rand
 import os
 
 
+date_lims = ("2000-01-01","2024-12-31")
+
 def generate_dataset(size: int, target: str = None) -> pd.DataFrame:
 
   target_rate = 0.001
   train_types = "скорый пассажирский товарный".split(' ')
-  date_range = pd.date_range(start="2000-01-01",end="2024-12-31",freq="D").astype(str)
+  date_range = pd.date_range(start=date_lims[0],end=date_lims[1],freq="D").astype(str)
 
 
   df = pd.DataFrame(columns=["No","Date","Type","Departure time","Travel time"])
@@ -37,7 +39,8 @@ def generate_dataset(size: int, target: str = None) -> pd.DataFrame:
 SIZE = [100,200,300,500,1000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000]
 datasets_folder = "./datasets/"
 
-target_key = str(pd.to_datetime(np.random.randint(365*4), unit='D', origin=pd.Timestamp("2020-01-01")).date())
+target_key = rand.choice(pd.date_range(start=date_lims[0],end=date_lims[1],freq="D").astype(str))
+
 
 with open("target_key.txt", "w") as file:
   file.write(target_key)

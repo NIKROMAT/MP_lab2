@@ -1,17 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 2: Класс BinaryTree</title>
+<title>Лабораторная работа 2: Класс BinaryTree</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,9 +24,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 2
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 2
    </div>
   </td>
  </tr>
@@ -29,22 +34,33 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.13.2 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -54,52 +70,73 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 </div><!-- top -->
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classBinaryTree-members.html">Полный список членов класса</a>  </div>
-  <div class="headertitle">
-<div class="title">Класс BinaryTree</div>  </div>
+  <div class="headertitle"><div class="title">Класс BinaryTree</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс бинарного дерева  
- <a href="classBinaryTree.html#details">Подробнее...</a></p>
+ <a href="#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="lab2_8h_source.html">lab2.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBinaryTree_1_1Node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс узла бинарного дерева  <a href="structBinaryTree_1_1Node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:adf45bce605436b26c353b87e27bffe50"><td class="memItemLeft" align="right" valign="top"><a id="adf45bce605436b26c353b87e27bffe50"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#adf45bce605436b26c353b87e27bffe50">BinaryTree</a> ()</td></tr>
+<tr class="memitem:adf45bce605436b26c353b87e27bffe50" id="r_adf45bce605436b26c353b87e27bffe50"><td class="memItemLeft" align="right" valign="top"><a id="adf45bce605436b26c353b87e27bffe50" name="adf45bce605436b26c353b87e27bffe50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BinaryTree</b> ()</td></tr>
 <tr class="memdesc:adf45bce605436b26c353b87e27bffe50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор бинарного дерева по умолчанию <br /></td></tr>
 <tr class="separator:adf45bce605436b26c353b87e27bffe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a2af97186493b6bad3ee90e9a9c425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#a40a2af97186493b6bad3ee90e9a9c425">BinaryTree</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;)</td></tr>
-<tr class="memdesc:a40a2af97186493b6bad3ee90e9a9c425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор бинарного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#a40a2af97186493b6bad3ee90e9a9c425">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a40a2af97186493b6bad3ee90e9a9c425" id="r_a40a2af97186493b6bad3ee90e9a9c425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40a2af97186493b6bad3ee90e9a9c425">BinaryTree</a> (const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a40a2af97186493b6bad3ee90e9a9c425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор бинарного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:a40a2af97186493b6bad3ee90e9a9c425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c23a22a8400765d099e0e6fcebc236"><td class="memItemLeft" align="right" valign="top"><a id="a48c23a22a8400765d099e0e6fcebc236"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#a48c23a22a8400765d099e0e6fcebc236">~BinaryTree</a> ()</td></tr>
+<tr class="memitem:a48c23a22a8400765d099e0e6fcebc236" id="r_a48c23a22a8400765d099e0e6fcebc236"><td class="memItemLeft" align="right" valign="top"><a id="a48c23a22a8400765d099e0e6fcebc236" name="a48c23a22a8400765d099e0e6fcebc236"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~BinaryTree</b> ()</td></tr>
 <tr class="memdesc:a48c23a22a8400765d099e0e6fcebc236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор бинарного дерева <br /></td></tr>
 <tr class="separator:a48c23a22a8400765d099e0e6fcebc236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d8f80f5451cbacb0338fa533d135ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#af3d8f80f5451cbacb0338fa533d135ac">insert</a> (const <a class="el" href="structObject.html">Object</a> &amp;)</td></tr>
-<tr class="memdesc:af3d8f80f5451cbacb0338fa533d135ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>.  <a href="#af3d8f80f5451cbacb0338fa533d135ac">Подробнее...</a><br /></td></tr>
+<tr class="memitem:af3d8f80f5451cbacb0338fa533d135ac" id="r_af3d8f80f5451cbacb0338fa533d135ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3d8f80f5451cbacb0338fa533d135ac">insert</a> (const <a class="el" href="structObject.html">Object</a> &amp;)</td></tr>
+<tr class="memdesc:af3d8f80f5451cbacb0338fa533d135ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>.  <br /></td></tr>
 <tr class="separator:af3d8f80f5451cbacb0338fa533d135ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cfc97afa0ee9607b6c216f7e8d5e3c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#a15cfc97afa0ee9607b6c216f7e8d5e3c">search</a> (const std::string &amp;) const</td></tr>
-<tr class="memdesc:a15cfc97afa0ee9607b6c216f7e8d5e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для поиска всех объектов в бинарном дереве с заданным ключом  <a href="#a15cfc97afa0ee9607b6c216f7e8d5e3c">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a15cfc97afa0ee9607b6c216f7e8d5e3c" id="r_a15cfc97afa0ee9607b6c216f7e8d5e3c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15cfc97afa0ee9607b6c216f7e8d5e3c">search</a> (const std::string &amp;) const</td></tr>
+<tr class="memdesc:a15cfc97afa0ee9607b6c216f7e8d5e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для поиска всех объектов в бинарном дереве с заданным ключом  <br /></td></tr>
 <tr class="separator:a15cfc97afa0ee9607b6c216f7e8d5e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae7e672ece25489eb84fc177bbe866023" id="r_ae7e672ece25489eb84fc177bbe866023"><td class="memItemLeft" align="right" valign="top"><a id="ae7e672ece25489eb84fc177bbe866023" name="ae7e672ece25489eb84fc177bbe866023"></a>
+<a class="el" href="structBinaryTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>root</b></td></tr>
+<tr class="memdesc:ae7e672ece25489eb84fc177bbe866023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на корень бинарного дерева <br /></td></tr>
+<tr class="separator:ae7e672ece25489eb84fc177bbe866023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс бинарного дерева </p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="a40a2af97186493b6bad3ee90e9a9c425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40a2af97186493b6bad3ee90e9a9c425">&#9670;&nbsp;</a></span>BinaryTree()</h2>
+<a id="a40a2af97186493b6bad3ee90e9a9c425" name="a40a2af97186493b6bad3ee90e9a9c425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a2af97186493b6bad3ee90e9a9c425">&#9670;&#160;</a></span>BinaryTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,17 +144,16 @@ $(function() {
         <tr>
           <td class="memname">BinaryTree::BinaryTree </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>itemList</em></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>itemList</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Конструктор бинарного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Конструктор бинарного дерева по набору объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">itemList</td><td>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, которые помещаются в дерево при создании </td></tr>
+    <tr><td class="paramname">itemList</td><td>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, которые помещаются в дерево при создании </td></tr>
   </table>
   </dd>
 </dl>
@@ -125,8 +161,8 @@ $(function() {
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="af3d8f80f5451cbacb0338fa533d135ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3d8f80f5451cbacb0338fa533d135ac">&#9670;&nbsp;</a></span>insert()</h2>
+<a id="af3d8f80f5451cbacb0338fa533d135ac" name="af3d8f80f5451cbacb0338fa533d135ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d8f80f5451cbacb0338fa533d135ac">&#9670;&#160;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,25 +170,24 @@ $(function() {
         <tr>
           <td class="memname">void BinaryTree::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structObject.html">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>. </p>
+<p>Метод для вставки нового объекта класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, помещаемый в бинарное дерево </td></tr>
+    <tr><td class="paramname">obj</td><td>Объект класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, помещаемый в бинарное дерево </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a15cfc97afa0ee9607b6c216f7e8d5e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15cfc97afa0ee9607b6c216f7e8d5e3c">&#9670;&nbsp;</a></span>search()</h2>
+<a id="a15cfc97afa0ee9607b6c216f7e8d5e3c" name="a15cfc97afa0ee9607b6c216f7e8d5e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cfc97afa0ee9607b6c216f7e8d5e3c">&#9670;&#160;</a></span>search()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,8 +195,7 @@ $(function() {
         <tr>
           <td class="memname">std::vector&lt; <a class="el" href="structObject.html">Object</a> &gt; BinaryTree::search </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -170,11 +204,11 @@ $(function() {
 <p>Метод для поиска всех объектов в бинарном дереве с заданным ключом </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>Ключ, по которому ищутся объекты класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a> </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ, по которому ищутся объекты класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах ">Object</a>, чьи ключи совпали с искомым </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список объектов класса <a class="el" href="structObject.html" title="Объекты класса Object хранят данные о поездах">Object</a>, чьи ключи совпали с искомым </dd></dl>
 
 </div>
 </div>
@@ -185,9 +219,8 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
+</div><!-- doc-content -->
 </body>
 </html>

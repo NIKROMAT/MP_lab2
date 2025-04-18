@@ -2,10 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-filepath = "./results.csv"
-picpath  = "./graphics.png"
+res_filepath = "./results.csv"
+res_picpath  = "./graphics.png"
 
-results = pd.read_csv(filepath)
+col_filepath = "./collisions.csv"
+col_picpath  = "./collisions.png"
+
+results = pd.read_csv(res_filepath)
 
 names = results.columns[1:]
 
@@ -42,5 +45,24 @@ plt.ylabel("Время поиска, µs")
 plt.yscale("log")
 
 
-plt.savefig(picpath)
+plt.savefig(res_picpath)
 
+
+collisions = pd.read_csv(col_filepath)
+
+plt.figure(figsize=(10,5),layout="tight")
+
+
+
+plt.title("Зависимость коллизий в хеш-таблице от количества элементов в наборе данных")
+
+plt.plot(collisions["Size"], collisions["Collisions"], "--ob")
+  
+plt.grid(linestyle=":")
+
+plt.xlabel("Количесто элементов")
+plt.ylabel("Количество коллизий")
+
+plt.xscale("log")
+
+plt.savefig(col_picpath)
